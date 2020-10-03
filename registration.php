@@ -2,4 +2,4 @@
 
 use Magento\Framework\Component\ComponentRegistrar;
 
-ComponentRegistrar::register(ComponentRegistrar::MODULE, 'Chdtu_InfiniteScroll', __DIR__);
+ComponentRegistrar::register(ComponentRegistrar::MODULE, 'BMG_InfiniteScroll', __DIR__);

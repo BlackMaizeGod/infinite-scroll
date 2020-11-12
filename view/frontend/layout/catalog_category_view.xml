@@ -2,13 +2,13 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
-        <referenceContainer name="content">
+        <referenceBlock name="category.products.list">
+            <action method="setTemplate">
+                <argument name="template" xsi:type="string">BMG_InfiniteScroll::product/list.phtml</argument>
+            </action>
             <block name="infinite-scroll.category.products.list" class="Magento\Catalog\Block\Product\ListProduct"
-                   template="BMG_InfiniteScroll::product/list.phtml" after="category.products">
-                <action method="setIsAjax">
-                    <argument name="isAjax" xsi:type="boolean">false</argument>
-                </action>
+                   template="BMG_InfiniteScroll::product/list_only.phtml">
             </block>
-        </referenceContainer>
+        </referenceBlock>
     </body>
 </page>
